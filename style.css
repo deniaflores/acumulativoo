@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 20;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+
+  font-size: 14px;
+}
+
+.contenedor {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #1e1e2f;
+  padding: 10px 5px;
+  color: white;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f0a500;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  text-align: justify;
+  font-size: 14px;
+  min-width: 0;
+  border-left: 1px solid #ddd;
+}
+
+.logo {
+  width: 60px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.imagenes {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.imagenes img {
+  width: 48%;
+  height: auto;
+  border-radius: 6px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #4d2ed6;
+  text-align: center;
+}
+
+.tabla-responsiva {
+  width: 100%;
+  overflow-x: auto;
+  margin: 15px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px;
+  font-size: 12px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    padding: 5px 3px;
+  }
+
+  .sidebar h2 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .sidebar a {
+    font-size: 10px;
+  }
+
+  .content {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .imagenes {
+    flex-direction: column;
+  }
+
+  .imagenes img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  table {
+    font-size: 11px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+table {
+  width: 100%; /* Que la tabla ocupe todo el ancho disponible */
+  border-collapse: collapse; /* Para que las líneas se vean unidas */
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ccc; /* Líneas de las celdas */
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #007BFF; /* Fondo azul en encabezados */
+  color: white; /* Texto blanco en encabezados */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Rayas para filas pares */
+}
+
+tbody tr:hover {
+  background-color: #ddd; /* Color al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y texto general */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Párrafos */
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* Enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Listas */
+ul, ol {
+  margin: 10px 0 20px 40px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
